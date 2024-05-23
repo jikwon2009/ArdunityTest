@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     }
     #endregion
     public string userName;
+    public GameObject currentBrightnessButton;
+    public GameObject currentColorButton;
     // Start is called before the first frame update
     void Start()
     {
