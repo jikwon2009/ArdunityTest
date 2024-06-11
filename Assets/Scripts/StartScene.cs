@@ -21,8 +21,12 @@ public class StartScene : MonoBehaviour
     }
     private void ClickStartButton()
     {
-        GameManager.Instance.userName = nameInput.text;
-        SceneManager.LoadScene("MainScene");
+        if (nameInput.text != "")
+        {
+            GameManager.Instance.userName = nameInput.text;
+            SceneManager.LoadScene("MainScene");
+
+        }
     }
 
 }
